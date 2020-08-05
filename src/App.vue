@@ -1,7 +1,7 @@
 <template>
-  <div class="b-container">
+  <b-container fluid>
     <app-header></app-header>
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -9,9 +9,13 @@ import header from "@/components/Header.vue";
 
 export default {
   components: {
-    appHeader: header
-  }
+    appHeader: header,
+  },
 };
 </script>
 
-<style></style>
+<style>
+body {
+  background-color: red;
+}
+</style>

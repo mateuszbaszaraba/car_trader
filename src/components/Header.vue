@@ -1,6 +1,10 @@
 <template>
   <div>
-    <b-button v-b-toggle.sidebar-1>Toggle Sidebar</b-button>
+    <div class="hamburger" v-b-toggle.sidebar-1>
+      <div class="hamb"></div>
+      <div class="hamb"></div>
+      <div class="hamb"></div>
+    </div>
     <b-sidebar id="sidebar-1" shadow>
       <slot name="title"></slot>
       <template v-slot:title>
@@ -36,5 +40,19 @@
 
 .menu-item:hover {
   text-decoration: line-through;
+}
+
+.hamb {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  outline: none;
+}
+
+.hamburger {
+  margin: 3vh 0 0 2vw;
+  width: 35px;
+  outline: none;
 }
 </style>
