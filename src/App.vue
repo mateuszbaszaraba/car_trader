@@ -1,6 +1,7 @@
 <template>
-  <b-container fluid>
-    <app-header></app-header>
+  <b-container fluid style="padding: 0">
+    <app-header style="position: absolute"></app-header>
+    <router-view></router-view>
   </b-container>
 </template>
 
@@ -9,13 +10,15 @@ import header from "@/components/Header.vue";
 
 export default {
   components: {
-    appHeader: header,
-  },
+    appHeader: header
+  }
 };
 </script>
 
 <style>
 body {
-  background-color: red;
+  background-color: #eee;
+  margin: 0;
+  text-transform: uppercase;
 }
 </style>
